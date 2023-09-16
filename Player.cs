@@ -54,4 +54,21 @@ public partial class Player : Area2D
 		}
 		Hide();
 	}
+
+	private void OnBodyEntered(PhysicsBody2D body)
+	{
+		Hide();
+		EmitSignal(SignalName.Hit);
+		GetNode<CollisionShape2D>("CollisionShape2D").SetDeferred(CollisionShape2D.PropertyName.Disabled, true);
+	}
+	public void Start(Vector2 position)
+	{
+		Position = position;
+		Show();
+		GetNode<CollisionShape2D>("CollisionShape2D").Disabled = false;
+	}
+
 }
+
+
+
