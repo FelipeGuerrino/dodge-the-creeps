@@ -64,7 +64,7 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_04ja3")
 metadata/_edit_group_ = true
 
-[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." groups=["mobs"]]
 position = Vector2(-6, 4)
 metadata/_edit_group_ = true
 
