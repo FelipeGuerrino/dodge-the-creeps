@@ -52,7 +52,6 @@ public partial class Player : Area2D
 			animatedSprite2D.Animation = "up";
 			animatedSprite2D.FlipV = velocity.Y > 0;
 		}
-		Hide();
 	}
 
 	private void OnBodyEntered(PhysicsBody2D body)
